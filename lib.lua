@@ -139,8 +139,8 @@ end)
 
 local LibName = tostring(math.random(1, 100))..tostring(math.random(1,50))..tostring(math.random(1, 100))
 
-function outputname()
-    return LibName
+function destroy()
+    game:getService("CoreGui")[LibName]:Destroy()
 end
 
 function Kavo:ToggleUI()
